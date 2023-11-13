@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Titre de la page -->
+    <title>Jeu du Chifoumi</title>
+    <!-- Le lien vers la feuille de style qui permet d'améliorer le visuel -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Corps de la page, il contient tout ce qui doit apparaître pour l'utilisateur -->
+<body>
+    <!-- Titre affiché en haut de l'écran -->
+    <h1>Jeu du Chifoumi</h1>
+    <!-- Sous-titre affiché à gauche pour l'utilisateur -->
+    <h3>Sélectionnez votre main</h3>
+
+    <!-- Conteneur de toutes les mains affichées pour l'utilisateur -->
+    <div id="gauche">
+
+        <!-- Affichage du conteneur "pierre" -->
+        <div id="pierre" class="main">
+            <!-- Affichage de l'image "pierre" -->
+            <img src="pierre-feuille-ciseau/gauche-pierre.png" width=100%>
+        </div>
+
+        <div id="feuille" class="main">
+            <img src="pierre-feuille-ciseau/gauche-feuille.png" width=100%>
+        </div>
+
+        <div id="ciseau" class="main">
+            <img src="pierre-feuille-ciseau/gauche-ciseau.png" width=100%>
+        </div>
+    </div>
+
+    <!-- Conteneur de la main de l'ordinateur -->
+    <div id="ordinateur">
+        <!-- Affichage de l'image de la main de l'ordinateur -->
+        <div id="droite"></div>
+    </div>
+
+    <!-- Affichage du résultat et du score -->
+    <div id="resultat"></div>
+
+    <!-- Chargement et execution du script en Javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
