@@ -1,0 +1,63 @@
+/* a gauche, c'est la main du joueur */
+#gauche {
+    display: inline-block;
+    grid-area: joueur;
+}
+
+/* a droite, c'est la main de l'ordinateur */
+#droite {
+    display: inline-block;
+}
+
+/* toutes les mains du joueur */
+.main {
+    border-radius: 20px;
+}
+
+/* titre de la page */
+h1 {
+    grid-area: titre;
+    font-weight: bold;
+    font-size: 72pt;
+    text-align: center;
+    background-color: darkred;
+    color: white;
+    margin: 0;
+    border-radius: 20px;
+}
+
+/* sous-titre du joueur */
+h3 {
+    grid-area: soustitre;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20pt;
+    text-align: center;
+    color: darkred;
+}
+
+/* main de l'ordinateur */
+#ordinateur {
+    grid-area: ordi;
+}
+
+/* affichage du résultat et du score */
+#resultat {
+    grid-area: resultat;
+    font-size: 20pt;
+    font-variant: small-caps;
+    font-weight: bold;
+    margin: auto;
+}
+
+/* contenu de tout le body et structure de la grille d'affichage */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 140px 100px auto;
+    grid-template-areas: 
+        "titre titre titre"
+        "soustitre . ."
+        "joueur resultat ordi";
+}
